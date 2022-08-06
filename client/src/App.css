@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+*{
+  background-color: rgb(3, 3, 84);
+}
+
+fieldset{
+  color: aliceblue;
+  margin: 5rem;
 }
