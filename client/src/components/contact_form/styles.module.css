@@ -1,0 +1,13 @@
+.form_container{
+    background-color: rgb(222, 145, 249);
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.input{
+    height: 2rem;
+}

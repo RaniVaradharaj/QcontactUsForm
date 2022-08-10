@@ -1,12 +1,23 @@
 // import logo from './logo.svg';
 import React from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
+import Main from "./components/Main";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import contact_form from "./components/contact_form";
 
-function App() {
+const App = () => {
+  const user = localStorage.getItem("token");
+
   return (
-    <>
-      <div className="main"></div>
-    </>
+    <Routes>
+      {user && <Route path="/" element={<Main />} />}
+      <Route path="/Signup" element={<Signup />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/Form" element={<Form />} />
+      <Route path="/" element={<Navigate replace to="/login" />} />
+    </Routes>
   );
-}
+};
 
 export default App;
